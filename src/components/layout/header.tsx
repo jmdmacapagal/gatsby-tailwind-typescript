@@ -14,8 +14,12 @@ export const Header: React.FC<Props> = ({ links, siteTitle }) => {
       </div>
 
       <div>
-        {links.map(({ linkTitle, linkPath }) => {
-          return <Link to={linkPath}>{linkTitle}</Link>
+        {links.map(({ linkTitle, linkPath }, index) => {
+          return (
+            <Link key={index} to={linkPath}>
+              {linkTitle}
+            </Link>
+          )
         })}
       </div>
     </header>
