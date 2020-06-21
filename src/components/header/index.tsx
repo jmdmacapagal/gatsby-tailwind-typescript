@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import { link } from "fs"
 
 interface Props {
   links: Array<{ linkTitle: string; linkPath: string }>
